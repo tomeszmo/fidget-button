@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Button</title>
+
+    <!-- CCS and JS -->
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <script src="../script-colors.js"></script>
+  </head>
+  <body>
+    <!-- HEADING -->
+    <div>
+      <h1> FIDGET BUTTON</h1>
+    </div>
+    <br>
+    <br>
+    <div class="color-pick">
+      <h3>CHOOSE COLOR</h3>
+
+       <!-- COLOR PICKER -->
+       <select class="blue" onchange="window.location.href=this.options [this.selectedIndex].value">
+        <option class="blue" value="./blue.html">BLUE</option>
+        <option class="red" value="../index.html">RED</option>
+        <option class="yellow" value="./yellow.html">YELLOW</option>
+      </select>
+    </div>
+
+    <!-- BUTTON BLUE -->
+    <div class="main">
+      <div class="button-holder">
+        <button id="btn" class="fidget-btn btn-2" onclick="audio.play();">click me</button>
+      </div>
+
+      <!-- LOAD AUDIO -->
+      <div class="audio-when-load">
+        
+        <audio src="../audio/switching.mp3" id="my_audio"></audio>
+  <script>
+    window.onload=function(){
+      document.getElementById("my_audio").play();
+    }
+  </script>
+      </div>
+
+    </div>  
+  </body>
+</html>
